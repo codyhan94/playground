@@ -1,1 +1,3 @@
-here is a dumb idea.
+This is a good idea.
+
+We have now made it great.
