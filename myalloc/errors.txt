@@ -1,0 +1,77 @@
+a.1)
+
+It would be unable to free properly
+because the it would be accessing somewhere
+that either contained the header or just not
+at the beginning of the payload
+
+in any case the oldptr variable 
+would not move back to the correct position
+and and we would access a different value size
+than we intended to for that address this value size
+could be anything from a different headers size
+or some value created from the NULL part of the header
+of some address we did allocate a header to.
+
+We would then be freeing either the incorrect value
+or we would be freeing some really huge number such
+as 14324320423 which exceeds our memory limit
+and cause a segfault. 
+
+
+
+a.2) 
+
+We would access a part of the payload 
+and then so if we increment back
+we would get some random part of the header
+and not the exact address we set it to 
+and try to extract the size from that area of the 
+header. 
+THis would gives us some really large integer 
+instead of the size we wanted and then we would
+be coalescing things and adding values we do notwant
+We would also be negating a value that is positive
+so we would have a really large negative int somewhere
+in our memory
+and we would then later seg fault
+
+
+a.3)
+
+If we were freeing an address that is already freed
+we would first negate the value we once "freed"
+and the right side if positive would go back to
+original size before we freed
+and the left side if positive would be 
+preptr->size minus old pointer size and then add right size
+which would make the pre pointer value size larger 
+which would interfere with the header of the old pointer
+and lead to a seg fault
+
+
+
+b.)
+to solve the first problem
+-------------------------
+we take our input and subtract 4 
+and check to see if the address is a header
+we would have some kind of list that
+had a list of all the header
+ and we go through that list
+each time to check if the address is
+contained in that list if not we abort
+
+to solve the second problem
+----------------------------------
+we basically do what is stated above
+and then check if that memory address 
+exists as the beginning of a header
+if not we then abort
+
+
+solve third problem
+-----------------------------------
+Everytime we free somehting we
+must get rid of the header size. 
+
