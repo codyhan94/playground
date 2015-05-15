@@ -321,7 +321,7 @@ void arrInsert(multimap_value *a, int val) {
 
   // Check if array still has room, if not, allocate more, double size
   if (a->index >= a->size) {
-    int * new_arr = realloc(a->arr, a->size * 2);
+    int * new_arr = realloc(a->arr, sizeof(int) * a->size * 2);
     // check if new_arr is OK
     if (new_arr == NULL) {
       exit(1);
@@ -355,11 +355,11 @@ int arrFind(multimap_value *a, int val) {
 void mm_add_value(multimap *mm, int key, int value) {
     multimap_node *node;
 
-    printf("ADDING KEY, VALUE: %d, %d\n", key, value);
+    /* printf("ADDING KEY, VALUE: %d, %d\n", key, value); */
 
-    if (key == 12) {
-      printf("Hi");
-    }
+    /* if (key == 12) { */
+    /*   printf("Hi"); */
+    /* } */
 
     assert(mm != NULL);
 
@@ -374,9 +374,9 @@ void mm_add_value(multimap *mm, int key, int value) {
     /* Add the new value to the multimap node. */
     
     arrInsert(node->arr_info, value);
-    if (node->key == 12) {
-      printf("NODE 12 SIZE: %d, NODE 12 INDEX: %d\n", node->arr_info->size, node->arr_info->index);
-    }
+    /* if (node->key == 12) { */
+    /*   printf("NODE 12 SIZE: %d, NODE 12 INDEX: %d\n", node->arr_info->size, node->arr_info->index); */
+    /* } */
 }
 
 
@@ -384,7 +384,7 @@ void mm_add_value(multimap *mm, int key, int value) {
  * otherwise.
  */
 int mm_contains_key(multimap *mm, int key) {
-  printf("PROBING FOR KEY: %d\n", key);
+  /* printf("PROBING FOR KEY: %d\n", key); */
     return find_mm_node(mm->root, key, /* create */ 0) != NULL;
 }
 
@@ -396,7 +396,7 @@ int mm_contains_pair(multimap *mm, int key, int value) {
     multimap_node *node;
     multimap_value *curr;
 
-    printf("CHECKING FOR KEY: %d\n", key);
+    /* printf("CHECKING FOR KEY: %d\n", key); */
 
     node = find_mm_node(mm->root, key, /* create */ 0);
     if (node == NULL)

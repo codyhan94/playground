@@ -1,8 +1,8 @@
 # For performance testing:
-# CFLAGS = -Wall -DNDEBUG -O2
+CFLAGS = -Wall -DNDEBUG -O2
 
 # For debugging:
-CFLAGS = -Wall -g -O0 -DDEBUG_ZERO
+# CFLAGS = -Wall -g -O0 -DDEBUG_ZERO
 
 CFLAGS += -m32
 
