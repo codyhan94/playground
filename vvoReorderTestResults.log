@@ -1,0 +1,107 @@
+-------------------------------------------------------------------------------
+Print the Test Results for Test Case: 0: 
+Print the Splited Spec Info:
+Print Info For Spec 0: 
+Test Name: VVOTest
+Corner Name: VVOCorner0
+Result Name: VVOResult0
+High Target: 44
+
+The starting Monte Carlo Sampling Point is: 1
+The Max Number of Monte Carlo Sampling Points is: 8000
+The Max Number of Points Sent to Spectre for Each Run is: 50
+Runing Yield Verification Test Case.
+The Yield Verification Target is: 0.998
+The Yield Verification Alpha is: 0.05
+The Actually Number of Samples Simulated under Reorder Algorithm is: 60
+The Estimated Yield by Reorder Algorithm is Higher than Target.
+The Golden Yield is Higher than Target.
+The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
+
+Print the Test Function for Each Spec:
+Print Test Function For Spec 0:
+X0
+
+Print the Function Estimated by Reorder Algorithm:
+Print the Estimated Function For Spec 0
+1*X0 + 1.0129e-17
+-------------------------------------------------------------------------------
+Print the Test Results for Test Case: 1: 
+Print the Splited Spec Info:
+Print Info For Spec 0: 
+Test Name: VVOTest
+Corner Name: VVOCorner0
+Result Name: VVOResult0
+High Target: 2.5
+
+The starting Monte Carlo Sampling Point is: 1
+The Max Number of Monte Carlo Sampling Points is: 8000
+The Max Number of Points Sent to Spectre for Each Run is: 50
+Runing Yield Verification Test Case.
+The Yield Verification Target is: 0.998
+The Yield Verification Alpha is: 0.05
+The Actually Number of Samples Simulated under Reorder Algorithm is: 189
+The Estimated Yield by Reorder Algorithm is Lower than Target.
+The Golden Yield is Lower than Target.
+The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
+
+Print the Test Function for Each Spec:
+Print Test Function For Spec 0:
+X0
+
+Print the Function Estimated by Reorder Algorithm:
+Print the Estimated Function For Spec 0
+1*X0 + 1.0129e-17
+-------------------------------------------------------------------------------
+Print the Test Results for Test Case: 2: 
+Print the Splited Spec Info:
+Print Info For Spec 0: 
+Test Name: VVOTest
+Corner Name: VVOCorner0
+Result Name: VVOResult0
+High Target: 3
+
+The starting Monte Carlo Sampling Point is: 1
+The Max Number of Monte Carlo Sampling Points is: 8000
+The Max Number of Points Sent to Spectre for Each Run is: 50
+Runing Yield Verification Test Case.
+The Yield Verification Target is: 0.998
+The Yield Verification Alpha is: 0.05
+The Actually Number of Samples Simulated under Reorder Algorithm is: 79
+The Estimated Yield by Reorder Algorithm is Very Close to Target.
+The Golden Yield is Very Close to Target.The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
+
+Print the Test Function for Each Spec:
+Print Test Function For Spec 0:
+X0
+
+Print the Function Estimated by Reorder Algorithm:
+Print the Estimated Function For Spec 0
+1*X0 + 1.0129e-17
+-------------------------------------------------------------------------------
+Print the Test Results for Test Case: 3: 
+Print the Splited Spec Info:
+Print Info For Spec 0: 
+Test Name: VVOTest
+Corner Name: VVOCorner0
+Result Name: VVOResult0
+High Target: 5
+
+The starting Monte Carlo Sampling Point is: 1
+The Max Number of Monte Carlo Sampling Points is: 8000
+The Max Number of Points Sent to Spectre for Each Run is: 50
+Runing Yield Verification Test Case.
+The Yield Verification Target is: 0.998
+The Yield Verification Alpha is: 0.05
+The Actually Number of Samples Simulated under Reorder Algorithm is: 60
+The Estimated Yield by Reorder Algorithm is Higher than Target.
+The Golden Yield is Higher than Target.
+The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
+
+Print the Test Function for Each Spec:
+Print Test Function For Spec 0:
+X0
+
+Print the Function Estimated by Reorder Algorithm:
+Print the Estimated Function For Spec 0
+1*X0 + 1.0129e-17
