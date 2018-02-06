@@ -1,21 +1,23 @@
 -------------------------------------------------------------------------------
-Print the Test Results for Test Case: 0: 
+Print the Test Results for Test Case 0: 
+Testing yield verification using linear function 'y = x' and spec y < 0 with 3 sigma (0.99865) yield target at alpha = 0.05. Expect yield to be lower as x < 0 for a standard normal RV should have yield .5.
 Print the Splited Spec Info:
 Print Info For Spec 0: 
 Test Name: VVOTest
 Corner Name: VVOCorner0
 Result Name: VVOResult0
-High Target: 44
+High Target: 0
 
 The starting Monte Carlo Sampling Point is: 1
 The Max Number of Monte Carlo Sampling Points is: 8000
 The Max Number of Points Sent to Spectre for Each Run is: 50
 Runing Yield Verification Test Case.
-The Yield Verification Target is: 0.998
+The Yield Verification Target is: 0.99865
 The Yield Verification Alpha is: 0.05
-The Actually Number of Samples Simulated under Reorder Algorithm is: 60
-The Estimated Yield by Reorder Algorithm is Higher than Target.
-The Golden Yield is Higher than Target.
+Total number of samples simulated under reorder algorithm: 50
+Number of samples used during initial MC sampling to build model: 0
+The Estimated Yield by Reorder Algorithm is Lower than Target.
+The Golden Yield is Lower than Target.
 The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
 
 Print the Test Function for Each Spec:
@@ -23,10 +25,10 @@ Print Test Function For Spec 0:
 X0
 
 Print the Function Estimated by Reorder Algorithm:
-Print the Estimated Function For Spec 0
-1*X0 + 1.0129e-17
+The Estimated Function Doesn't Exist. The Algorithm Didn't Build the Statistical Model.
 -------------------------------------------------------------------------------
-Print the Test Results for Test Case: 1: 
+Print the Test Results for Test Case 1: 
+Testing yield verification using linear function 'y = x' and spec y < 2.5 with 3 sigma (0.99865) yield target at alpha = 0.05. Expect yield to be lower as x < 2.5 for a standard normal RV should have yield .99379.
 Print the Splited Spec Info:
 Print Info For Spec 0: 
 Test Name: VVOTest
@@ -38,9 +40,10 @@ The starting Monte Carlo Sampling Point is: 1
 The Max Number of Monte Carlo Sampling Points is: 8000
 The Max Number of Points Sent to Spectre for Each Run is: 50
 Runing Yield Verification Test Case.
-The Yield Verification Target is: 0.998
+The Yield Verification Target is: 0.99865
 The Yield Verification Alpha is: 0.05
-The Actually Number of Samples Simulated under Reorder Algorithm is: 189
+Total number of samples simulated under reorder algorithm: 189
+Number of samples used during initial MC sampling to build model: 50
 The Estimated Yield by Reorder Algorithm is Lower than Target.
 The Golden Yield is Lower than Target.
 The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
@@ -53,7 +56,8 @@ Print the Function Estimated by Reorder Algorithm:
 Print the Estimated Function For Spec 0
 1*X0 + 1.0129e-17
 -------------------------------------------------------------------------------
-Print the Test Results for Test Case: 2: 
+Print the Test Results for Test Case 2: 
+Testing yield verification using linear function 'y = x' and spec y < 3 with 3 sigma (0.99865) yield target at alpha = 0.05. Expect yield to be very close to high target as x < 3 for a standard normal RV should have the specified yield .99865.
 Print the Splited Spec Info:
 Print Info For Spec 0: 
 Test Name: VVOTest
@@ -65,9 +69,10 @@ The starting Monte Carlo Sampling Point is: 1
 The Max Number of Monte Carlo Sampling Points is: 8000
 The Max Number of Points Sent to Spectre for Each Run is: 50
 Runing Yield Verification Test Case.
-The Yield Verification Target is: 0.998
+The Yield Verification Target is: 0.99865
 The Yield Verification Alpha is: 0.05
-The Actually Number of Samples Simulated under Reorder Algorithm is: 79
+Total number of samples simulated under reorder algorithm: 79
+Number of samples used during initial MC sampling to build model: 50
 The Estimated Yield by Reorder Algorithm is Very Close to Target.
 The Golden Yield is Very Close to Target.The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
 
@@ -79,7 +84,8 @@ Print the Function Estimated by Reorder Algorithm:
 Print the Estimated Function For Spec 0
 1*X0 + 1.0129e-17
 -------------------------------------------------------------------------------
-Print the Test Results for Test Case: 3: 
+Print the Test Results for Test Case 3: 
+Testing yield verification using linear function 'y = x' and spec y < 5 with 3 sigma (0.99865) yield target at alpha = 0.05. Expect yield to be higher than high target as x < 5 for a standard normal RV should have yield ~ 1.
 Print the Splited Spec Info:
 Print Info For Spec 0: 
 Test Name: VVOTest
@@ -91,12 +97,72 @@ The starting Monte Carlo Sampling Point is: 1
 The Max Number of Monte Carlo Sampling Points is: 8000
 The Max Number of Points Sent to Spectre for Each Run is: 50
 Runing Yield Verification Test Case.
-The Yield Verification Target is: 0.998
+The Yield Verification Target is: 0.99865
 The Yield Verification Alpha is: 0.05
-The Actually Number of Samples Simulated under Reorder Algorithm is: 60
+Total number of samples simulated under reorder algorithm: 60
+Number of samples used during initial MC sampling to build model: 50
 The Estimated Yield by Reorder Algorithm is Higher than Target.
 The Golden Yield is Higher than Target.
 The Estimated Yield Result is the Same with the Golden Result, the Yield Verification Test Passed
+
+Print the Test Function for Each Spec:
+Print Test Function For Spec 0:
+X0
+
+Print the Function Estimated by Reorder Algorithm:
+Print the Estimated Function For Spec 0
+1*X0 + 1.0129e-17
+-------------------------------------------------------------------------------
+Print the Test Results for Test Case 4: 
+Testing worst sample using linear function 'y = x' and spec y < 2.5 with 3 sigma (0.99865) target.
+Print the Splited Spec Info:
+Print Info For Spec 0: 
+Test Name: VVOTest
+Corner Name: VVOCorner0
+Result Name: VVOResult0
+High Target: 2.5
+
+The starting Monte Carlo Sampling Point is: 1
+The Max Number of Monte Carlo Sampling Points is: 8000
+The Max Number of Points Sent to Spectre for Each Run is: 50
+Running Worst Samples Test Case.
+The Yield Verification Target is: 0.99865
+Finding the Intrapolated Result from 11th and 12th Worst Sample as the Final Results.
+Total number of samples simulated under reorder algorithm: 73
+Number of samples used during initial MC sampling to build model: 50
+
+The Golden Intrapolation Result for Spec 0 is: 2.93766
+The Intrapolation Result Obtained from Reorder Algorithm for Spec 0 is: 2.93766
+The Intrapolated Result from 11th and 12th Worst Sample for Spec 0 is Correct!
+
+Print the Test Function for Each Spec:
+Print Test Function For Spec 0:
+X0
+
+Print the Function Estimated by Reorder Algorithm:
+Print the Estimated Function For Spec 0
+1*X0 + 1.0129e-17
+-------------------------------------------------------------------------------
+Print the Test Results for Test Case 5: 
+Testing worst sample using linear function 'y = x' and spec y < 2.5 with 1st worst sample target.
+Print the Splited Spec Info:
+Print Info For Spec 0: 
+Test Name: VVOTest
+Corner Name: VVOCorner0
+Result Name: VVOResult0
+High Target: 2.5
+
+The starting Monte Carlo Sampling Point is: 1
+The Max Number of Monte Carlo Sampling Points is: 8000
+The Max Number of Points Sent to Spectre for Each Run is: 50
+Running Worst Samples Test Case.
+Finding the 1th Worst Sample as the Final Results.
+Total number of samples simulated under reorder algorithm: 60
+Number of samples used during initial MC sampling to build model: 50
+
+The Golden 1th Worst Result for Spec 0 is: 3.88956
+The 1th Worst Sample Result Obtained from Reorder Algorithm for Spec 0 is: 3.88956
+The 1th Worst Sample Found for Spec 0 is Correct!
 
 Print the Test Function for Each Spec:
 Print Test Function For Spec 0:
